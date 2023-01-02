@@ -1,0 +1,126 @@
+<html lang="pt-br">
+<head>
+	<title> Neko Inu - Fale Conosco </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/paws.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+
+<!-- Inicio cabeçalho e menu -->
+	<div class="menu_lateral">
+	
+		<input type="checkbox" id="check">
+		<label for="check">
+			<img src="imagens/login.png" width="40" height="40">
+		</label>
+		<nav>
+		<form name="frm_login">
+			<ul>
+				<h3>Acesse a sua conta:</h3><p>
+				<li>Email:<br></li>
+				<li><input id="caixa" type="text" value="" name= "txt_email_login" size ="35" maxlength="50" required><br></li>
+				<li>Senha:<br></li>
+				<li><input id="caixa" type="password" value="" name= "txt_senha_login" size ="35" maxlength="20" required></li><br><br>
+				<li><input id="botao_login" type ="button" name="btn_login_menu" value="Entrar" onClick="login()"></li><br><br><br><br>
+				<div class="cadastro_link">
+				<li> Não possui uma conta?</a>
+				<li><a href="cadastro.html"> Cadastre-se</a></li>
+				</div>
+			</ul>
+			</form>
+		</nav>
+	</div>
+
+	<div class="cabecalho_logo">
+		<img  src="imagens/Logo Horizontal.png" width="400" height="220"></a>
+	</div>
+
+	<div class="menu_principal">
+		<center>
+			<ul>
+				<li><a href="homepage.html" target="principal">Página Inicial </a></li>
+				<li><a href="produtos.html" target="principal">Produtos</a></li>
+				<li><a href="quemsomos.html" target="principal">Quem Somos</a></li>
+				<li><a href="fale_conosco.html" target="principal">Fale Conosco </a></li>
+			</ul>
+		</center>
+	</div>
+
+<!-- Fim cabeçalho e menu -->
+<center>
+	<div class="bemvindo">
+		<h1 id="titulo">Seja Bem vindo</h1>
+
+      <br><br>
+	  <h5>Esta parte do site é dedicada a elogios, sugestões, dúvidas, reclamações e etc.<br>
+	  Como você deve estar cansadinho hoje, deixe essa parte para o seu 'humano' fazer. <br>
+	  Ficaremos felizes em te ouvir e buscaremos sempre a melhor solução para te atender.</h5>
+
+
+<br><br><br><br><br><br>
+</center>
+</div>
+<div class="contato">
+	<div class="conteudo1">
+	
+	<br><p><h1>Nos mande uma mensagem</h1></p>
+
+      <p><h4 id="info">Se você preferir, poderá entrar em contato conosco através deste formulário.<br>
+		Então, que tal deixar um recadinho pra gente?</h4></p>
+      <br>
+	  	  
+	<form>
+<div class="dados"
+          <label for="name">Nome do meu PET:</label>
+<input type="text" name="pet" id="pet" required>
+     
+		<br><br>
+    
+         <label for="dono do Pet">Meu nome:</label>
+<input type="text" name="dono do Pet" id="dono do Pet" required>
+
+		<br><br>
+ 
+      
+          <label for="Email">Email</label>
+<input type="email" name="Email" id="Email" required>
+<br><br>
+<label for="telefone">Telefone:</label>
+<input type="phone" name="telefone" id="telefone" required>
+		</div>
+     <br><br>
+<div class="responda">
+  <label><h4>Por qual motivo o seu PET pediu para você mandar essa mensagem para nossa equipe?</h4></label>
+    <select id="categoria">
+		  <option>        </option>
+          <option>Está super feliz e quer fazer um elogio</option>
+          <option>Precisa tirar algumas dúvidas</option>
+          <option>Tem Sugestões</option>
+          <option>Está muito bravo com vocês</option>
+          <option>Nenhuma das alternativas, mas ele quer falar com vocês mesmo assim.</option>
+    </select>
+<br><br><br>
+  <label><h4>Escreva a mensagem do seu PET aqui:</h4></label>
+  <textarea cols="50" rows="20" id="experiencia" name= "experiencia"></textarea>
+<br><br>
+
+      <button id="botao" class="botao" type="submit">Enviar</button>
+   <br><br><br>
+
+</div>
+
+<!-- Fim cabeçalho e menu -->
+      </form>
+	</div>
+
+	<div class="conteudo1">
+		<h1>Fale conosco pelos nossos telefones:</h1>
+		<p>(11) 4545-4545 </p>
+		<p> 0800 4545 4545 </p>
+	</div>
+</div>
+</body>
+<script src="java.js"></script>
+</html>

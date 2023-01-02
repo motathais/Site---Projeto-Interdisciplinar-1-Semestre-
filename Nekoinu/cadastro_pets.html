@@ -1,0 +1,101 @@
+<html lang="pt-br">
+<head>
+	<title> Neko Inu - Cadastro de Pets </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/paws.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+
+<!-- Inicio cabeçalho e menu -->
+	<div class="menu_lateral">
+		<input type="checkbox" id="check">
+		<label for="check">
+			<img src="imagens/menu_bar.png" width="65" height="50">
+		</label>
+		
+		<nav>
+		<div class="menu_lateral_login">
+			<ul>
+				<li><a href="meu_perfil.html"> Minha Conta</a></li>
+				<li><a href="meus_pets.html"> Meus Pets</a></li>
+				<li><a href="meus_agendamentos.html"> Meus Agendamentos</a></li>
+			</ul>
+		</div>
+		</nav>
+	</div>
+
+	<div class="cabecalho_logo">
+		<img  src="imagens/Logo Horizontal.png" width="400" height="220"></a>
+	</div>
+
+	<div class="menu_principal">
+		<center>
+			<ul>
+				<li><a href="agendamento_servicos.html" target="principal"> Agendamento de serviços </a></li>
+				<li><a href="historico_compras.html" target="principal"> Histórico de Compras</a></li>
+			</ul>
+		</center>
+	</div>
+
+<!-- Fim cabeçalho e menu -->
+
+
+<!-- Inicio do Formulario -->
+<div class="formulario">
+<form name="frm_cadastro_pet">
+<fieldset>
+	<legend><h4> Dados do Pet: </h4></legend>
+	<center>
+	<img src="imagens/cat_user.png" width="160" height="160" ></img><br>
+	</center>
+	Nome:<br>
+	<input id="caixa" type="text" value="" name="txt_nome_pet_cadastro" size ="60" maxlength="60" required><p>
+	Data de Nascimento:<br>
+	<P><input id="caixa" type="date" value="" name="txt_idade_pet_cadastro" size ="20" maxlength="80" required><p>
+	Vacinas:<br>
+	<ul>
+		<li><input type="checkbox" name="vacinas">Polivalente</li>
+		<li><input type="checkbox" name="vacinas">Antirrábica</li>
+		<li><input type="checkbox" name="vacinas">Gripe </li>
+		<li><input type="checkbox" name="vacinas">Giárdia </li>
+		<li><input type="checkbox" name="vacinas"> Leishmaniose </li>
+		<li><input type="checkbox" name="vacinas"> Outras </li>
+		Especifique:<br>
+		<input id="caixa" type="text" value="" name= "txt_especificacao_pet_cadastro" size ="20" maxlength="80" required><p>
+	</ul>
+	Adicione uma breve descrição do seu Pet:<br>
+	<textarea  id="caixa" cols="50" rows="10" name="txt_descricao_pet_cadastro"></textarea><p>
+	
+	<center>
+	<input id="botao" type ="button" name="btn_salvar_pet" value="Salvar" onClick="cadastrar_pet()">&nbsp;&nbsp;
+	<input id="botao" type ="button" name="btn_limpar_pet" value="Limpar" onClick="limpar_pet()">&nbsp;&nbsp;
+	</center>
+</fieldset>
+&nbsp;&nbsp;&nbsp;
+</form>
+</div>
+
+<!-- Fim do Formulario-->
+
+</body>
+<script src="java.js"></script>
+</html>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

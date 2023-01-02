@@ -1,0 +1,137 @@
+<html lang="pt-br">
+<head>
+	<title> Neko Inu - Meu Perfil</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/paws.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+
+<!-- Inicio cabeçalho e menu -->
+	<div class="menu_lateral">
+	
+		<input type="checkbox" id="check">
+		<label for="check">
+			<img src="imagens/menu_bar.png" width="65" height="50">
+		</label>
+		
+		<nav>
+		<div class="menu_lateral_login">
+			<ul>
+				<li><a href="meu_perfil.html"> Minha Conta</a></li>
+				<li><a href="meus_pets.html"> Meus Pets</a></li>
+				<li><a href="meus_agendamentos.html"> Meus Agendamentos</a></li>
+			</ul>
+		</div>
+		</nav>
+	</div>
+
+	<div class="cabecalho_logo">
+		<img  src="imagens/Logo Horizontal.png" width="400" height="220"></a>
+	</div>
+
+	<div class="menu_principal">
+		<center>
+			<ul>
+				<li><a href="agendamento_servicos.html" target="principal"> Agendamento de serviços </a></li>
+				<li><a href="historico_compras.html" target="principal"> Histórico de Compras</a></li>
+			</ul>
+		</center>
+	</div>
+
+<!-- Fim cabeçalho e menu -->
+
+<!-- Inicio do Formulario -->
+
+<div class="formulario">
+<form name="frm_cadastro">
+<fieldset>
+	<legend> <h4>Dados Pessoais </h4></legend>
+	
+	<center><img src="imagens/user_perfil.png" width="160" height="160"></img></center><br>
+	Nome:<br>
+	<input id="caixa" type="text" value="João Silva" name= "txt_name_cadastro" size ="60" maxlength="60" required><p>
+	Email:<br>
+	<input id="caixa" type="text" value="joao.silva@gmail.com" name= "txt_email_cadastro" size ="60" maxlength="80" required><p>
+	CPF:<br>
+	<input id="caixa" type="text" value="999.999.999-99" name= "txt_cpf_cadastro" size ="20" maxlength="80" required><p>
+	Telefone:<br>
+	<input id="caixa" type="text" value="(11)99999-9999" name= "txt_telefone_cadastro" size="20" maxlength="20"><p>
+	Celular:<br>
+	<input  id="caixa" type="text" value="(11)99999-9998" name= "txt_celular_cadastro" size="20" maxlength="20"><p>
+	Rua:<br>
+	<input id="caixa" type="text" value="Rua Samoa" name= "txt_rua_cadastro" size ="60" maxlength="60" required><p>
+	Numero:<br>
+	<input id="caixa" type="text" value="72" name= "txt_numero_cadastro" size ="12" maxlength="60" required><p>
+	Bairro:<br>
+	<input id="caixa" type="text" value="Bairro Oceania" name= "txt_bairro_cadastro" size ="50" maxlength="60" required><p>
+	
+	Estado:<br>
+	<select id="caixa" name = "unidades">
+		<option value = "SP"> SP</option>
+		<option value = "RJ"> RJ </option>
+		<option value = "MG"> MG </option>
+		<option value = "RS"> ES </option>
+	</select>
+	<p>
+	
+	Cidade:<br>
+	<select id="caixa" name = "unidades">
+		<option value = "MAU"> Mauá </option>
+		<option value = "SA"> Santo André </option>
+		<option value = "SCS"> São Caetano do Sul </option>
+		<option value = "SBC"> São Bernardo do Campo </option>
+		<option value = "DIA"> Diadema </option>
+		<option value = "RIP"> Ribeirão Pires</option>
+		<option value = "RGS"> Rio Grande da Serra </option>
+	</select><p>
+	
+	
+ &nbsp;&nbsp;&nbsp;
+ Selecione a sua idade:
+	<input id="caixa" value="23"type="number" min="1" max= "100"><p>
+ &nbsp;&nbsp;&nbsp;
+	Sexo:
+	<input id="caixa" type = "radio" name="m" checked> Masculino 
+	<input id="caixa" type="radio" name="m">Feminino <p>
+	Senha:<br>
+	<input id="caixa" type="password" value="12345" name= "txt_senha_cadastro" size ="20" maxlength="60" required><p>
+	
+	<p>Selecione uma forma de pagamento padrão (opcional):<br>
+	<select id="caixa" name = "modalidades">
+		<option value = "PN"> Pix </option>
+		<option value = "PN"> Cartão de Crédito </option>
+		<option value = "PT"> Cartão de Débito </option>
+		<option value = "EAD"> Boleto </option>
+	</select>
+	<p>
+	
+	<center>
+	<br><input id="botao_perfil" type ="button" name="btn_alterar_cadastro" value="Salvar Alterações" onClick="alterar_cadastro()">&nbsp;&nbsp;
+	</center>
+</fieldset>
+&nbsp;&nbsp;&nbsp;
+
+</div>
+<!-- Fim do Formulario-->
+</body>
+<script src="java.js"></script>
+</html>
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+<html lang="pt-br">
+<head>
+	<title> Neko Inu - Cadastro Usuário </title>
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/paws.png">
+	<link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+
+<!-- Inicio cabeçalho e menu -->
+	<div class="menu_lateral">
+	
+		<input type="checkbox" id="check">
+		<label for="check">
+			<img src="imagens/login.png" width="40" height="40">
+		</label>
+		<nav>
+		<form name="frm_login">
+			<ul>
+				<h3>Acesse a sua conta:</h3><p>
+				<li>Email:<br></li>
+				<li><input id="caixa" type="text" value="" name= "txt_email_login" size ="35" maxlength="50" required><br></li>
+				<li>Senha:<br></li>
+				<li><input id="caixa" type="password" value="" name= "txt_senha_login" size ="35" maxlength="20" required></li><br><br>
+				<li><input id="botao_login" type ="button" name="btn_login_menu" value="Entrar" onClick="login()"></li><br><br><br><br>
+				<div class="cadastro_link">
+				<li> Não possui uma conta?</a>
+				<li><a href="cadastro.html"> Cadastre-se</a></li>
+				</div>
+			</ul>
+			</form>
+		</nav>
+	</div>
+
+	<div class="cabecalho_logo">
+		<img  src="imagens/Logo Horizontal.png" width="400" height="220"></a>
+	</div>
+
+
+	<div class="cabecalho_logo">
+		<img  src="imagens/Logo Horizontal.png" width="400" height="220"></a>
+	</div>
+
+	<div class="menu_principal">
+		<center>
+			<ul>
+				<li><a href="homepage.html" target="principal">Página Inicial </a></li>
+				<li><a href="produtos.html" target="principal">Produtos</a></li>
+				<li><a href="quemsomos.html" target="principal">Quem Somos</a></li>
+				<li><a href="fale_conosco.html" target="principal">Fale Conosco </a></li>
+			</ul>
+		</center>
+	</div>
+
+<!-- Fim cabeçalho e menu -->
+
+<!-- Inicio do Formulario -->
+<div class="formulario">
+<form name="frm_cadastro">
+<fieldset>
+	<legend><h4> Dados Pessoais </h4></legend>
+	
+	Nome:<br>
+	<input id="caixa" type="text" value="" name= "txt_name_cadastro" size ="60" maxlength="60" required><p>
+	Email:<br>
+	<input id="caixa" type="text" value="" name= "txt_email_cadastro" size ="60" maxlength="80" required><p>
+	CPF:<br>
+	<input id="caixa" type="text" value="" name= "txt_cpf_cadastro" size ="20" maxlength="80" required><p>
+	Telefone:<br>
+	<input id="caixa" type="text" value="" name= "txt_telefone_cadastro" size="20" maxlength="20"><p>
+	Celular:<br>
+	<input  id="caixa" type="text" value="" name= "txt_celular_cadastro" size="20" maxlength="20"><p>
+	Rua:<br>
+	<input id="caixa" type="text" value="" name= "txt_rua_cadastro" size ="60" maxlength="60" required><p>
+	Numero:<br>
+	<input id="caixa" type="text" value="" name= "txt_numero_cadastro" size ="12" maxlength="60" required><p>
+	Bairro:<br>
+	<input id="caixa" type="text" value="" name= "txt_bairro_cadastro" size ="50" maxlength="60" required><p>
+	
+	Estado:<br>
+	<select id="caixa" name = "unidades">
+		<option value = "SP"> SP</option>
+		<option value = "RJ"> RJ </option>
+		<option value = "MG"> MG </option>
+		<option value = "RS"> ES </option>
+	</select>
+	<p>
+	
+	Cidade:<br>
+	<select id="caixa" name = "unidades">
+		<option value = "MAU"> Mauá </option>
+		<option value = "SA"> Santo André </option>
+		<option value = "SCS"> São Caetano do Sul </option>
+		<option value = "SBC"> São Bernardo do Campo </option>
+		<option value = "DIA"> Diadema </option>
+		<option value = "RIP"> Ribeirão Pires</option>
+		<option value = "RGS"> Rio Grande da Serra </option>
+	</select><p>
+	
+	
+ &nbsp;&nbsp;&nbsp;
+ Selecione a sua idade:
+	<input id="caixa" type="number" min="1" max= "100"><p>
+ &nbsp;&nbsp;&nbsp;
+	Sexo:
+	<input id="caixa" type = "radio" name="m"> Masculino 
+	<input id="caixa" type="radio" name="m">Feminino <p>
+	Senha:<br>
+	<input id="caixa" type="password" value="" name= "txt_senha_cadastro" size ="20" maxlength="60" required><br><br>
+	
+	<center>
+	<input id="botao" type ="button" name="btn_login1" value="Cadastrar" onClick="enviar_cadastro()">&nbsp;&nbsp;
+	<input id="botao" type ="button" name="btn_limpar1" value="Limpar" onClick="limpar_cadastro()">&nbsp;&nbsp;
+	</center>
+</fieldset>
+
+<!-- Fim do Formulario-->
+</body>
+<script src="java.js"></script>
+</html>
